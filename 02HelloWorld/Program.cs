@@ -33,6 +33,9 @@ namespace _02HelloWorld
 
             // Venter på at brugeren taster et-eller-andet
             Console.ReadKey();
+            // Ny kommentar
+            Console.ReadKey();
+
 
             Test(45);
             Test(10);
