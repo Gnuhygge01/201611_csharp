@@ -74,15 +74,15 @@ namespace _03ValueTypes
             s = System.Convert.ToInt16(i);  // Exception
             s = System.Convert.ToInt16("4");
 
-            checked
-            {
+            //checked
+            //{
                 byte r = byte.MaxValue;
                 Console.WriteLine(r);
                 r++;
                 Console.WriteLine(r);
                 r++;
                 Console.WriteLine(r);
-            }
+            //}
 
 
 
