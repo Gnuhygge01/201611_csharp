@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace _04RefType
 {
@@ -80,6 +81,43 @@ namespace _04RefType
             string t = "lkdgjsdlæfjgsdfj \tab";
             string sti = "c:\\temp\\test.txt";
             string sti2 = @"c:\temp\test.txt";
+
+            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+            System.Random rnd = new Random();
+            int antal = 100000;
+            string tals = string.Empty;
+            sw.Start();
+            for (int i = 0; i < antal; i++)
+            {
+                tals += rnd.Next(1, 1000).ToString() + ",";
+            }
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds + " " + sw.ElapsedTicks);
+
+            sw = new System.Diagnostics.Stopwatch();
+            sw.Start();
+            int[] tt = new int[antal];
+            for (int i = 0; i < antal; i++)
+            {
+                tt[i] = rnd.Next(1, 1000);
+            }
+            string res3 = string.Join(",", tt);
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds + " " + sw.ElapsedTicks);
+
+
+            sw = new System.Diagnostics.Stopwatch();
+            StringBuilder sb1 = new StringBuilder();
+            sw.Start();
+            for (int i = 0; i < antal; i++)
+            {
+                sb.Append(rnd.Next(1, 1000).ToString());
+                sb.Append(";");
+            }
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds + " " + sw.ElapsedTicks);
+            
+
 
         }
     }
