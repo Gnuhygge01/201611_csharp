@@ -163,13 +163,16 @@ namespace _04RefType
                 Console.WriteLine(talArray[i]);
             }
 
-            DateTime tid = DateTime.Now.AddSeconds(4);
+                DateTime tid = DateTime.Now.AddSeconds(4);
             do
             {
                 Console.Write("*");
             } while (DateTime.Now < tid);
 
+            for (int i = 0; i < 10; i++)
+            {
 
+            }
             return;
             System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
             System.Random rnd = new Random();
