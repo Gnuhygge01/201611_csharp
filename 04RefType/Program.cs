@@ -82,6 +82,95 @@ namespace _04RefType
             string sti = "c:\\temp\\test.txt";
             string sti2 = @"c:\temp\test.txt";
 
+            // Duer ikke rigtigt
+            int y = int.MinValue;
+            if (y == int.MinValue) { }
+
+            // brug nullable
+            Nullable<int> ah1;
+            int? ah;
+            ah = null;
+            if (ah.HasValue) {
+                Console.WriteLine(ah);
+            } else {
+
+            }
+
+            bool? checket;
+            checket = false;
+            checket = true;
+            checket = null;
+
+            // Virker ikke....
+            //bool checket2;
+            //checket2 = checket;
+
+            if (true) { } else { }
+
+            if (true)
+                Console.WriteLine("sand");
+
+            Console.WriteLine("sand");
+
+            DayOfWeek u = DayOfWeek.Friday;
+            switch (u)
+            {
+                case DayOfWeek.Sunday:
+                    break;
+                case DayOfWeek.Monday:
+
+
+                    break;
+                case DayOfWeek.Tuesday:
+
+                    break;
+                case DayOfWeek.Wednesday:
+                    break;
+                case DayOfWeek.Thursday:                    
+                case DayOfWeek.Friday:
+                case DayOfWeek.Saturday:
+
+
+                    break;
+                default:
+                    break;
+            }
+
+
+            for (int i = 0; i < 10; i++)
+            {
+
+            }
+
+            for (int i = 10; i >0; i--)
+            {
+
+            }
+
+            for (int i = 0; i < 10; i=i+2)
+            {
+
+            }
+
+            
+            foreach (string item in talArray)
+            {                
+                Console.WriteLine(item);
+            }
+
+            for (int i = 0; i < talArray.Length; i++)
+            {
+                Console.WriteLine(talArray[i]);
+            }
+
+            DateTime tid = DateTime.Now.AddSeconds(4);
+            do
+            {
+                Console.Write("*");
+            } while (DateTime.Now < tid);
+
+
+            return;
             System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
             System.Random rnd = new Random();
             int antal = 100000;
