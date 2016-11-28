@@ -18,8 +18,14 @@ namespace _07Prop
             get { return id; }
             set {
                 //
-                id = value; }
+                id = value;
+            }
+
+
+
+
         }
+
         //public string Id { get; set; }
 
         private string navn;
