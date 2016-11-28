@@ -39,6 +39,7 @@ namespace _07Prop
             b.Model = "x";
             var m = b.Model;
 
+
             //b.Set_Model("x12");
             //Console.WriteLine(b.Get_Model());
 
