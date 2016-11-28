@@ -14,9 +14,9 @@ namespace _07Prop
         //private static double momsPct = 0.25;
         static void Main(string[] args)
         {
-            
+
             //WriteLine()
-            
+
             //if(args.Length>0)
             //    Console.WriteLine(args[0]);
 
@@ -33,6 +33,14 @@ namespace _07Prop
             //Properties.Settings.Default.Const = "læsjæfld";
 
 
+
+            Bil b = new Bil();
+
+            b.Model = "x";
+            var m = b.Model;
+
+            //b.Set_Model("x12");
+            //Console.WriteLine(b.Get_Model());
 
 
 
