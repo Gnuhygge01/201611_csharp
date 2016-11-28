@@ -20,7 +20,6 @@ namespace _07Prop
                 id = value;
             }
         }
-
         //public string Id { get; set; }
 
         private string navn;
