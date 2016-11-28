@@ -11,10 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04RefType", "04RefType\04Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05Methods", "05Methods\05Methods.csproj", "{5E4551AD-2895-424C-8727-C1A3DD0212CC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00Diverse", "00Diverse", "{D6880D39-4D2A-4B1E-9B3B-BC34A0E9ED69}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Desktop\Cronbergs links.url = ..\..\..\Desktop\Cronbergs links.url
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06IntroOOP", "06IntroOOP\06IntroOOP.csproj", "{FA706AF8-E704-42E1-9290-C79B7326AF33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +35,10 @@ Global
 		{5E4551AD-2895-424C-8727-C1A3DD0212CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E4551AD-2895-424C-8727-C1A3DD0212CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E4551AD-2895-424C-8727-C1A3DD0212CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA706AF8-E704-42E1-9290-C79B7326AF33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA706AF8-E704-42E1-9290-C79B7326AF33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA706AF8-E704-42E1-9290-C79B7326AF33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA706AF8-E704-42E1-9290-C79B7326AF33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
