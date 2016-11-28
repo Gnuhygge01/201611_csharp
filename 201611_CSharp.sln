@@ -11,6 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04RefType", "04RefType\04Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05Methods", "05Methods\05Methods.csproj", "{5E4551AD-2895-424C-8727-C1A3DD0212CC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00Diverse", "00Diverse", "{D6880D39-4D2A-4B1E-9B3B-BC34A0E9ED69}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\Cronbergs links.url = ..\..\..\Desktop\Cronbergs links.url
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
