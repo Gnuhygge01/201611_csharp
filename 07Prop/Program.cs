@@ -43,8 +43,6 @@ namespace _07Prop
             //Console.WriteLine(b.Get_Model());
 
 
-
-
             return;
             A a = new A();
             Console.WriteLine(A.moms);
