@@ -3,17 +3,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 
 namespace _07Prop
 {
     class Program
     {
-
+        
         private static System.Random rnd = new Random();
-
+        //private static double momsPct = 0.25;
         static void Main(string[] args)
         {
             
+            //WriteLine()
+            
+            //if(args.Length>0)
+            //    Console.WriteLine(args[0]);
+
+            //return;
+
+            // Kræver ref til System.Configuration
+            //var m = System.Configuration.ConfigurationManager.AppSettings["moms"];
+            //Console.WriteLine(m);
+
+            //Console.WriteLine(Properties.Settings.Default.MomsPct);
+            //Properties.Settings.Default.MomsPct = 0.3;
+            //Properties.Settings.Default.Save();
+            //Properties.Settings.Default.Farve = System.Drawing.Color.Beige;
+            //Properties.Settings.Default.Const = "læsjæfld";
+
+
+
+
+
+
+            return;
             A a = new A();
             Console.WriteLine(A.moms);
 

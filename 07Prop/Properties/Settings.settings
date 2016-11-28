@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="_07Prop.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MomsPct" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.25</Value>
+    </Setting>
+    <Setting Name="Farve" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Yellow</Value>
+    </Setting>
+    <Setting Name="Const" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">elkgsdklfhgs ldfjkghldgh sdfjkgh sldgh sldkgh sldkgh sdklfjgh sldgh sdfjkgh </Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
