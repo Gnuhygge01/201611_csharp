@@ -13,20 +13,20 @@ namespace _08Inheritance
             Person p = new Person();
             p.Fornavn = "X";
             p.Efternavn = "Y";
-            Console.WriteLine(p.FuldtName());
-            
+            //Console.WriteLine(p.FuldtName());
+            p.Log();
             Instruktør i = new Instruktør();
             i.Fornavn = "X1";
             i.Efternavn = "Y1";
-            Console.WriteLine(i.FuldtName());
+            //Console.WriteLine(i.FuldtName());
+            i.Log();
+
 
             Person p1 = new Instruktør();
             Instruktør i1 = (Instruktør)p1;
-            
 
-
-
-
+            Test t = new Test();
+            //Console.WriteLine(t.ToString()); 
         }
     }
 }

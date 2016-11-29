@@ -16,14 +16,20 @@ namespace _08Inheritance
             return Fornavn + " " + Efternavn;
         }
 
-        protected void Log() { }
+        public virtual void Log() {
+            Console.WriteLine("Log fra person");
+        }
     }
 
     class Instruktør : Person {
         public string MedarbejderId { get; set; }
 
-        public void SkrivLønSeddel() {
-            this.Log();
+        public override void Log()
+        {
+            Console.WriteLine("Log fra Instruktør");
+        }
+
+        public void SkrivLønSeddel() {            
             Console.WriteLine("D");
         }
     }
@@ -45,4 +51,5 @@ namespace _08Inheritance
         }
     }
 
+     
 }
