@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _08Inheritance
 {
@@ -51,5 +47,18 @@ namespace _08Inheritance
         }
     }
 
-     
+
+    class A {
+        public void Log() {
+            Console.WriteLine("A");
+        }
+    }
+    class B : A {
+        public new void Log()
+        {
+            Console.WriteLine("B");
+        }
+    }
+
+
 }

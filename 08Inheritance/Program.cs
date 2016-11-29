@@ -27,6 +27,33 @@ namespace _08Inheritance
 
             Test t = new Test();
             //Console.WriteLine(t.ToString()); 
+
+            A a = new A();
+            a.Log();
+
+            B b = new B();
+            b.Log();
+
+            A aa = new B();
+            aa.Log();
+
+            
+            
+            A aaa = (A)b;
+
+            A aaaa = b as A;
+            if (aaaa != null) { }
+
+            
+
+            object o = a;
+
+
+
+
+
+
+
         }
     }
 }
