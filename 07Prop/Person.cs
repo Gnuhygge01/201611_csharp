@@ -13,6 +13,23 @@ namespace _07Prop
 
         private string id;
 
+        public string Fornavn { get; set; }
+        public string Efternavn { get; set; }
+
+        public string Fuldtnavn() {
+            return Fornavn + " " + Efternavn;
+        }
+
+        // var f = o.FuldtNavn();
+        // var f = o.FuldtNavn2;
+
+        public string FuldtNavn2
+        {
+            get { return Fornavn + " " + Efternavn; }
+            
+        }
+
+
         public string Id
         {
             get { return id; }

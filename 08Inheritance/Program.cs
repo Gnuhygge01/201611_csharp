@@ -10,6 +10,23 @@ namespace _08Inheritance
     {
         static void Main(string[] args)
         {
+            Person p = new Person();
+            p.Fornavn = "X";
+            p.Efternavn = "Y";
+            Console.WriteLine(p.FuldtName());
+            
+            Instruktør i = new Instruktør();
+            i.Fornavn = "X1";
+            i.Efternavn = "Y1";
+            Console.WriteLine(i.FuldtName());
+
+            Person p1 = new Instruktør();
+            Instruktør i1 = (Instruktør)p1;
+            
+
+
+
+
         }
     }
 }
