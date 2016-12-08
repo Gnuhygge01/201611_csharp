@@ -32,7 +32,7 @@ namespace _10Interface
             }
 
 
-            // DI
+            // DI (dependency injection)
             IRepository rep;
             string r = System.Configuration.ConfigurationManager.AppSettings["repository"];
             //if (DateTime.Now.Millisecond % 2 == 0) {
@@ -56,7 +56,9 @@ namespace _10Interface
         }
 
         public static void Test(IMaskine m) {
+            // log m
             m.Start();
+            // færdig
         }
     }
 }
