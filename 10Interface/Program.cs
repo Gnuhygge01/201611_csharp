@@ -27,10 +27,36 @@ namespace _10Interface
             maskiner[1] = new Køler();
             for (int i = 0; i < maskiner.Length; i++)
             {
-                maskiner[i].Start();
+                //maskiner[i].Start();
+                Test(maskiner[i]);
             }
 
 
+            // DI
+            IRepository rep;
+            string r = System.Configuration.ConfigurationManager.AppSettings["repository"];
+            //if (DateTime.Now.Millisecond % 2 == 0) {
+            if (r == "FilRepository") { 
+                rep = new FilRepository();            
+            } else {
+                rep = new MockRepository();
+            }            
+
+
+            //var rep = new FilRepository();
+            //var rep = new MockRepository();
+            var l = rep.HentAlleDyr();
+            foreach (var item in l)
+            {
+                Console.WriteLine(item.Navn);
+            }
+
+
+
+        }
+
+        public static void Test(IMaskine m) {
+            m.Start();
         }
     }
 }
