@@ -13,6 +13,7 @@ namespace _09Exception
 
         static void Main(string[] args)
         {
+
             logger.Debug("App start");
 
             try
