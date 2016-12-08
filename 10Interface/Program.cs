@@ -52,6 +52,33 @@ namespace _10Interface
             }
 
 
+            Console.WriteLine();
+
+            Zoo z = new Zoo();
+            z.TilføjDyr(new Dyr() { Navn = "Løve" });
+            z.TilføjDyr(new Dyr() { Navn = "Tiger" });
+
+            foreach (var item in z)
+            {
+
+            }
+
+            using (Zoo zz = new Zoo())
+            {
+
+            }
+
+            //{
+            //    Zoo zzz = null;
+            //    try
+            //    {
+            //        zzz = new Zoo();
+            //    }
+            //    finally
+            //    {
+            //        zzz.Dispose();
+            //    }
+            //}
 
         }
 
