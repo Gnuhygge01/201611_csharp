@@ -10,6 +10,27 @@ namespace _10Interface
     {
         static void Main(string[] args)
         {
+
+            TransportBånd t = new TransportBånd();
+            t.Start();
+            t.Stop();
+            
+
+            IMaskine tt = new TransportBånd();
+            tt.Start();
+            TransportBånd ttt = (TransportBånd)tt;
+            ttt.Start();
+            Console.WriteLine();
+
+            IMaskine[] maskiner = new IMaskine[2];
+            maskiner[0] = new TransportBånd();
+            maskiner[1] = new Køler();
+            for (int i = 0; i < maskiner.Length; i++)
+            {
+                maskiner[i].Start();
+            }
+
+
         }
     }
 }
