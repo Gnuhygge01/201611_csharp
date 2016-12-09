@@ -50,12 +50,44 @@ namespace _11Collections
             Dictionary<string, List<string>> d3
                 = new Dictionary<string, List<string>>();
 
-            
 
+            Fakturalinjer f = new Fakturalinjer();
+            f.Add(new FakturaLinje() { Beløb = 100 });
+            f.Add(new FakturaLinje() { Beløb = 50 });
+            Console.WriteLine(f.FakturaSum());
 
+            int i = 10, u = 20;
+            Console.WriteLine(i + " " + u);
 
+            double s = 100, k = 200;
+            Swap<double>(ref s, ref k);
+            Console.WriteLine(s + " " + k);
 
+            bool z = true, e = false;
+            Swap<bool>(ref z, ref e);
+            Swap(ref z, ref e);
+            Console.WriteLine(z + " " + e);
 
         }
+
+        public static void Swap<T>(ref T a, ref T b)
+        {
+            T tmp = a;
+            a = b;
+            b = tmp;
+        }
+
+
+        //public static void Swap(ref int a, ref int b) {
+        //    int tmp = a;
+        //    a = b;
+        //    b = tmp;
+        //}
+        //public static void Swap(ref string a, ref string b)
+        //{
+        //    string tmp = a;
+        //    a = b;
+        //    b = tmp;
+        //}
     }
 }
