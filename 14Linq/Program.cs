@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace _13Advanced
+namespace _14Linq
 {
     class Program
     {
         static void Main(string[] args)
         {
-
         }
     }
 }
