@@ -53,21 +53,47 @@ namespace _12Events
 
 
             Hund h = new Hund();
-            h.SigNoget += H_SigNoget;
 
-            System.IO.FileSystemWatcher fw 
+
+            System.IO.FileSystemWatcher fw
                 = new System.IO.FileSystemWatcher(@"c:\temp");
-            fw.Created += Fw_Created;
+            //fw.Created += Fw_Created;
+            fw.Created += (sender, evt) => {
+                Console.WriteLine(evt.FullPath);
+            };
+
             fw.EnableRaisingEvents = true;
-            do
-            {
+            //do
+            //{
 
-            } while (true);
+            //} while (true);
 
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Hund g = new Hund();
+            //g.PropertyChanged += G_PropertyChanged;
 
+            //g.PropertyChanged += delegate (object se, MyEventArgs ev) {
+            //    Console.WriteLine("Egenskab rettet " + ev.PropName);
+            //};
+
+            g.PropertyChanged +=  (object se, MyEventArgs ev) => {
+                Console.WriteLine("Egenskab rettet " + ev.PropName);
+            };
+
+            g.Name = "1";
+            g.Name = "2";
+            g.Name = "3";
+            g.Age = 10;
+
+            
 
 
         }
+
+        //private static void G_PropertyChanged(object sender, MyEventArgs e)
+        //{
+        //    Console.WriteLine("Egenskab rettet " + e.PropName);
+        //}
 
         private static void Fw_Created(object sender, System.IO.FileSystemEventArgs e)
         {
