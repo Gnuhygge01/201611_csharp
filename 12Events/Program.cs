@@ -52,6 +52,31 @@ namespace _12Events
             var e = testp(1);
 
 
+            Hund h = new Hund();
+            h.SigNoget += H_SigNoget;
+
+            System.IO.FileSystemWatcher fw 
+                = new System.IO.FileSystemWatcher(@"c:\temp");
+            fw.Created += Fw_Created;
+            fw.EnableRaisingEvents = true;
+            do
+            {
+
+            } while (true);
+
+
+
+
+        }
+
+        private static void Fw_Created(object sender, System.IO.FileSystemEventArgs e)
+        {
+            Console.WriteLine(e.FullPath);
+        }
+
+        private static void H_SigNoget(string txt)
+        {
+            throw new NotImplementedException();
         }
 
         static BeregnerDelegate FindFunktion() {
