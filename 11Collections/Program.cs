@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,12 +38,22 @@ namespace _11Collections
             d.Add(2, "32dfgfd1");
             var g = d[2];
 
-            
+
 
             Dictionary<string, Dyr> d2 = new Dictionary<string, Dyr>();
-            d2.Add("1", new Dyr());
-            d2.Add("2", new Dyr());
+            d2.Add("1", new Dyr() { Navn = "æsldkf" });
+            d2.Add("2", new Dyr() { Navn = "æsldkf" });
             var g2 = d2["2"];
+
+            // til JSON
+            string output = JsonConvert.SerializeObject(d2);
+            System.IO.File.WriteAllText(@"c:\temp\data.json", output, System.Text.Encoding.UTF8);
+
+            // deserialize
+            var t = JsonConvert.DeserializeObject<Dictionary<string, Dyr>>(System.IO.File.ReadAllText(@"c:\temp\data.json"));
+            // http://www.newtonsoft.com/json/help/html/serializingjson.htm
+
+
 
             Stack<string> n = new Stack<string>();
             n.Push("");
