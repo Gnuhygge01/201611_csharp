@@ -16,7 +16,7 @@ namespace _13Advanced
             Console.WriteLine(t.FindFørsteBogstav());
 
             List<string> l = new List<string>();
-
+            // kdfjhg ldkshjg dkjgh sldkgh sdkfjgh 
 
             var p = new { navn = "Michell", alder = 10 };
             Console.WriteLine(p.navn);
